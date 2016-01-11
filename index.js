@@ -8,6 +8,14 @@ module.exports = class TrailsModel {
     this.app = app
   }
 
+  static config () {
+
+  }
+
+  static schema () {
+
+  }
+
   get log () {
     return this.app.log
   }

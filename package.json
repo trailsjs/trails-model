@@ -1,0 +1,24 @@
+{
+  "name": "trails-model",
+  "version": "1.0.0",
+  "description": "Trails Model Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trailsjs/trails-model.git"
+  },
+  "keywords": [
+    "trails",
+    "trailsjs",
+    "model"
+  ],
+  "author": "Trails.js Team <hello@trailsjs.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trailsjs/trails-model/issues"
+  },
+  "homepage": "https://github.com/trailsjs/trails-model#readme"
+}
