@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/trailsjs/trails-model/issues"
   },
-  "homepage": "https://github.com/trailsjs/trails-model#readme"
+  "homepage": "https://github.com/trailsjs/trails-model#readme",
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0-beta.2",
+    "eslint-config-trails": "^1.0.1"
+  }
 }

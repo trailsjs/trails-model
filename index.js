@@ -16,6 +16,14 @@ module.exports = class TrailsModel {
 
   }
 
+  /**
+   * Return the name of the database table or collection
+   */
+  getTableName () {
+    const config = this.constructor.config() || { }
+    return config.tableName || this.constructor.name.toLowerCase()
+  }
+
   get log () {
     return this.app.log
   }
