@@ -21,6 +21,13 @@ describe('Trails Model', () => {
   }
   const SubBar = class SubBar extends Bar { }
 
+  describe('#getModelName', () => {
+    it('should return correct model name', () => {
+      const foo = new Foo()
+      assert(foo.getModelName(), 'foo')
+    })
+  })
+
   describe('#getTableName', () => {
     it('should return tableName set in config', () => {
       const foo = new Foo()

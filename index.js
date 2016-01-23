@@ -1,4 +1,4 @@
-foouse strict'
+'use strict'
 
 /**
  * Trails Model Class. 
@@ -24,12 +24,16 @@ module.exports = class TrailsModel {
 
   }
 
+  getModelName () {
+    return this.constructor.name
+  }
+
   /**
    * Return the name of the database table or collection
    */
   getTableName () {
     const config = this.constructor.config() || { }
-    return config.tableName || this.constructor.name.toLowerCase()
+    return config.tableName || this.getModelName().toLowerCase()
   }
 
   get log () {
