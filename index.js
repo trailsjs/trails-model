@@ -1,17 +1,25 @@
-'use strict'
+foouse strict'
 
 /**
  * Trails Model Class. 
  */
 module.exports = class TrailsModel {
+
   constructor (app) {
     this.app = app
   }
 
+  /**
+   * Model configuration
+   */
   static config () {
 
   }
 
+  /**
+   * Model schema. The definition of its fields, their types, indexes,
+   * foreign keys, etc go here.
+   */
   static schema () {
 
   }

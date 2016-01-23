@@ -12,6 +12,14 @@ describe('Trails Model', () => {
     }
   }
   const Bar = class Bar extends Model { }
+  const SubFoo = class SubFoo extends Foo {
+    static config () {
+      return {
+        tableName: 'subfoo'
+      }
+    }
+  }
+  const SubBar = class SubBar extends Bar { }
 
   describe('#getTableName', () => {
     it('should return tableName set in config', () => {
@@ -21,6 +29,14 @@ describe('Trails Model', () => {
     it('should return tableName named after className if no tableName set', () => {
       const bar = new Bar()
       assert.equal(bar.getTableName(), 'bar')
+    })
+    it('should return tableName named after className of subclass', () => {
+      const subbar = new SubBar()
+      assert.equal(subbar.getTableName(), 'subbar')
+    })
+    it('should return tableName set in config of subclass', () => {
+      const subfoo = new SubFoo()
+      assert.equal(subfoo.getTableName(), 'subfoo')
     })
   })
 })
