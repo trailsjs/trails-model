@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * Trails Model Class. 
+ * Trails Model Class.
  */
 module.exports = class TrailsModel {
 
