@@ -24,8 +24,11 @@ module.exports = class TrailsModel {
 
   }
 
+  /**
+   * Return the name of this model
+   */
   getModelName () {
-    return this.constructor.name
+    return this.constructor.name.toLowerCase()
   }
 
   /**
@@ -33,7 +36,7 @@ module.exports = class TrailsModel {
    */
   getTableName () {
     const config = this.constructor.config() || { }
-    return config.tableName || this.getModelName().toLowerCase()
+    return config.tableName || this.getModelName()
   }
 
   get log () {
@@ -43,4 +46,5 @@ module.exports = class TrailsModel {
   get __ () {
     return this.app.packs.core.i18n.t
   }
+
 }
