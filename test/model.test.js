@@ -21,6 +21,17 @@ describe('Trails Model', () => {
   }
   const SubBar = class SubBar extends Bar { }
 
+  describe('#constructor', () => {
+    it('.app should be accessible but not enumerable', () => {
+      let foo = new Foo(1)
+      let keys = Object.keys(foo)
+
+      assert.equal(foo.app, 1)
+      assert.equal(keys.indexOf('app'), -1)
+    })
+
+  })
+
   describe('#getModelName', () => {
     it('should return correct model name', () => {
       const foo = new Foo()
