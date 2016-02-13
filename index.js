@@ -6,14 +6,16 @@
 module.exports = class TrailsModel {
 
   constructor (app) {
-    this.app = app
+    Object.defineProperty(this, 'app', {
+      enumerable: false,
+      value: app
+    })
   }
 
   /**
    * Model configuration
    */
   static config () {
-
   }
 
   /**
@@ -21,7 +23,6 @@ module.exports = class TrailsModel {
    * foreign keys, etc go here.
    */
   static schema () {
-
   }
 
   /**
