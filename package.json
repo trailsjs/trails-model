@@ -1,6 +1,6 @@
 {
   "name": "trails-model",
-  "version": "1.0.0-beta-2",
+  "version": "1.0.0",
   "description": "Trails Model Class",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,8 @@
     "extends": "trails"
   },
   "devDependencies": {
-    "eslint": "^2.0.0-beta.2",
-    "eslint-config-trails": "^1.0.1",
-    "mocha": "^2.3.4"
+    "eslint": "^3.9.1",
+    "eslint-config-trails": "^1.0.8",
+    "mocha": "^3.1.2"
   }
 }
